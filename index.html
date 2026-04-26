@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    Hello, World!
+  </h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRICK TEAM MOD | OB53</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --main-purple: #8A2BE2; --dark-bg: #050505; --card-bg: #111; --success: #25D366; }
+        body { background: var(--dark-bg); color: white; font-family: 'Segoe UI', sans-serif; margin: 0; }
+        
+        header { padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; background: rgba(138, 43, 226, 0.1); border-bottom: 1px solid #222; }
+        .menu-dots { cursor: pointer; padding: 10px; font-size: 22px; color: var(--main-purple); }
+
+        .hero { padding: 30px 20px; text-align: center; }
+        .glow-text { color: var(--main-purple); text-shadow: 0 0 15px rgba(138, 43, 226, 0.6); font-weight: bold; }
+        .badge { background: #28a745; color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px; margin-top: 10px; display: inline-block; }
+
+        .container { display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; padding: 20px; }
+        .card { background: var(--card-bg); border: 1px solid #222; border-radius: 18px; width: 280px; padding: 20px; transition: 0.3s; position: relative; text-align: center; }
+        .card:hover { border-color: var(--main-purple); transform: translateY(-5px); }
+        
+        .price-val { font-size: 35px; color: var(--main-purple); font-weight: bold; margin: 10px 0; }
+        .features-list { text-align: right; font-size: 13px; opacity: 0.8; padding: 0; list-style: none; margin-bottom: 20px; }
+        .features-list li { margin: 6px 0; }
+        .features-list i { color: #28a745; margin-left: 8px; }
+
+        .btn-group { display: flex; flex-direction: column; gap: 8px; }
+        .btn-buy { 
+            background: var(--success); color: white; text-decoration: none; 
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+            padding: 10px; border-radius: 8px; font-weight: bold; font-size: 13px; transition: 0.3s;
+        }
+        .btn-buy:hover { opacity: 0.8; box-shadow: 0 0 10px var(--success); }
+
+        /* لوحة الإدارة */
+        .modal { display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); backdrop-filter: blur(5px); }
+        .modal-content { background: #111; margin: 15% auto; padding: 30px; border: 1px solid var(--main-purple); width: 85%; max-width: 350px; border-radius: 20px; }
+        input { width: 100%; padding: 12px; margin: 10px 0; border-radius: 8px; border: 1px solid #333; background: #000; color: white; text-align: center; box-sizing: border-box;}
+        #admin-panel { display: none; }
+        .key-item { background: #000; padding: 8px; margin: 5px 0; border-radius: 5px; color: #0f0; font-family: monospace; font-size: 13px; text-align: left; border-left: 3px solid var(--main-purple); }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="font-size: 1.1rem; font-weight: bold;">STRICK <span class="glow-text">TEAM</span></div>
+        <div class="menu-dots" onclick="openModal()"><i class="fas fa-ellipsis-v"></i></div>
+    </header>
+
+    <div class="hero">
+        <h1 class="glow-text">STRICK TEAM APK MOD</h1>
+        <div class="badge">Vᴇʀsɪᴏɴ OB53 Uᴘᴅᴀᴛᴇᴅ</div>
+        <p style="opacity: 0.7; font-size: 13px; margin-top: 10px;">Safe • No Blacklist • No VPN</p>
+    </div>
+
+    <div class="container">
+        <script>
+            const plans = [
+                {t: "اشتراك 1 يوم", p: "1$", m: "يوم واحد"},
+                {t: "اشتراك 3 أيام", p: "4$", m: "3 أيام"},
+                {t: "اشتراك 7 أيام", p: "8$", m: "7 أيام"},
+                {t: "اشتراك 15 يوم", p: "12$", m: "15 يوم"},
+                {t: "اشتراك 30 يوم", p: "17$", m: "شهر كامل"}
+            ];
+
+            plans.forEach(plan => {
+                document.write(`
+                <div class="card">
+                    <h3>${plan.t}</h3>
+                    <div class="price-val">${plan.p}</div>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> 100% Safe Play</li>
+                        <li><i class="fas fa-check"></i> All Features Unlocked</li>
+                    </ul>
+                    <div class="btn-group">
+                        <a href="https://wa.me/212727625766?text=أريد+شراء+مفتاح+${plan.m}" class="btn-buy">
+                            <i class="fab fa-whatsapp"></i> واتساب (المغرب 🇲🇦)
+                        </a>
+                        <a href="https://wa.me/213676602313?text=أريد+شراء+مفتاح+${plan.m}" class="btn-buy" style="background:#006633">
+                            <i class="fab fa-whatsapp"></i> واتساب (الجزائر 🇩🇿)
+                        </a>
+                    </div>
+                </div>
+                `);
+            });
+        </script>
+    </div>
+
+    <div id="adminModal" class="modal">
+        <div class="modal-content">
+            <span style="float:left; cursor:pointer;" onclick="closeModal()">&times;</span>
+            <h3 class="glow-text">ADMIN LOGIN</h3>
+            <div id="login-form">
+                <input type="text" id="user" placeholder="Username">
+                <input type="password" id="pass" placeholder="Password">
+                <button class="btn-buy" style="width:100%; border:none; background: var(--main-purple);" onclick="doLogin()">دخول</button>
+            </div>
+            <div id="admin-panel">
+                <h4 style="color:#28a745">المفاتيح بالسيرفر:</h4>
+                <div id="keys-display"></div>
+                <input type="text" id="new-k" placeholder="أضف كود جديد">
+                <button class="btn-buy" style="width:100%; border:none; background:#28a745;" onclick="addNew()">إضافة</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let db = ["STRICK_879195920", "STRICK_94868290"];
+        const auth = { u: "U1RSSUNLIFRFQU0=", p: "MjAyNg==" }; 
+
+        function openModal() { document.getElementById('adminModal').style.display = 'block'; }
+        function closeModal() { document.getElementById('adminModal').style.display = 'none'; }
+
+        function doLogin() {
+            if(btoa(document.getElementById('user').value) === auth.u && btoa(document.getElementById('pass').value) === auth.p) {
+                document.getElementById('login-form').style.display = 'none';
+                document.getElementById('admin-panel').style.display = 'block';
+                showK();
+            } else { alert("خطأ!"); }
+        }
+
+        function showK() {
+            const container = document.getElementById('keys-display');
+            container.innerHTML = "";
+            db.forEach(k => container.innerHTML += `<div class="key-item">🔑 ${k}</div>`);
+        }
+
+        function addNew() {
+            const val = document.getElementById('new-k').value;
+            if(val) { db.push(val); showK(); document.getElementById('new-k').value = ""; }
+        }
+    </script>
+</body>
+</html>
